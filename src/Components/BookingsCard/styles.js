@@ -5,7 +5,7 @@ const Styles = StyleSheet.create({
         marginTop:15,
         width:'95%',
         backgroundColor:'rgba(255, 255, 255, 1)',
-        height:225,
+        height:275,
         marginLeft:'2.5%',
         borderRadius:15,
         padding:20,
@@ -15,10 +15,6 @@ const Styles = StyleSheet.create({
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity:0.2,
     },
-    topArea:{
-        flexDirection:'column',
-        height:120,
-    },
     labDetails:{
         width:'100%',
         flexDirection:'row',
@@ -26,7 +22,7 @@ const Styles = StyleSheet.create({
         justifyContent:'space-between',
     },  
     labName:{
-        fontSize:16,
+        fontSize:15,
         color:'#7B8FCE',
         fontWeight:'700',
     },
@@ -45,6 +41,10 @@ const Styles = StyleSheet.create({
         fontWeight:'600',
     },
     labTiming:{
+        borderColor:'#7B8FCE',
+        borderWidth:1,
+        padding:7,
+        borderRadius:5,
         marginTop:15,
         flexDirection:'row',
         alignItems:'center',
@@ -54,44 +54,68 @@ const Styles = StyleSheet.create({
         fontSize:12,
         fontWeight:'600',
     },
-    line:{
-        height:5,
-        width:100,
-    },
-    bottomArea:{
-        flexDirection:'row',
-        height:40,
-        alignItems:'center',
-        justifyContent:'space-between',
-    },
     icon:{
         marginRight:15,
     },
-    availability:{
+    testDetails:{
+        borderColor:'#7B8FCE',
+        borderWidth:1,
+        padding:7,
+        borderRadius:5,
+        marginTop:15,
+        flexDirection:'row',
+        alignItems:'center',
+    },
+    examName:{
+        fontSize:13,
+        fontWeight:'500',
+        color:'#333',
+        marginLeft:15
+    },
+    bottomArea:{
+        flexDirection:'row',
+        height:38,
+        alignItems:'center',
+        justifyContent:'space-between',
+    },
+    test:{
         color:'#7B8FCE',
         fontWeight:'700',
         fontSize:12,
     },
-    availabilityDate:{
-        // width:10,
-        // height:10,
+    testName:{
         borderColor:'#7B8FCE',
         color:'#555',
         fontWeight:'700',
         fontSize:12,
     },
-
-    bookButton:{
+    changeButton:{
         backgroundColor:'#7B8FCE',
         paddingVertical:12,
         paddingHorizontal:25,
         borderRadius:10,
     },
-    bookText:{
+    cancelButton:{
+        paddingVertical:12,
+        paddingHorizontal:25,
+        borderRadius:10,
+        borderColor:'#7B8FCE',
+        borderWidth:0.5,
+        marginLeft:15
+    },
+    changeText:{
         color:'#fff',
         fontSize:12,
         fontWeight:'600',
-    }
+    },
+    cancelText:{
+        color:'#7B8FCE',
+        fontSize:12,
+        fontWeight:'600',
+    },
+    buttons:{
+        flexDirection:'row',
+    },
 })
 
-export default Styles
+export default Styles;

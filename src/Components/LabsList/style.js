@@ -7,7 +7,7 @@ const Styles = StyleSheet.create({
         justifyContent:'center',
     },
     scrollArea:{
-        backgroundColor:'#D6DEF6',
+        backgroundColor:'#E6E8F0',
     }
 })
 

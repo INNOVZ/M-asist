@@ -1,0 +1,60 @@
+import {StyleSheet} from 'react-native'
+
+const Styles = StyleSheet.create({
+    container:{
+        width:'100%',
+        marginTop:20,
+        justifyContent:'center',
+    },
+    loginButtons:{
+        backgroundColor:'#D6DEF6',
+        height:200,
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    loginButton:{
+        backgroundColor:'#7B8FCE',
+        paddingVertical:12,
+        paddingHorizontal:25,
+        borderRadius:10,
+    },
+    signupButton:{
+        paddingVertical:12,
+        paddingHorizontal:25,
+        borderRadius:10,
+        borderColor:'#7B8FCE',
+        borderWidth:0.5,
+        marginLeft:15
+    },
+    loginText:{
+        color:'#fff',
+        fontSize:12,
+        fontWeight:'600',
+    },
+    signupText:{
+        color:'#7B8FCE',
+        fontSize:12,
+        fontWeight:'600',
+    },
+    bookText:{
+        color:'#fff',
+        fontSize:12,
+        fontWeight:'600',
+    },
+    profileMenus:{
+        width:'95%',
+        marginVertical:20,
+        marginLeft:'2.5%'
+    },
+    menu:{
+        color:'#7B8FCE',
+        fontSize:14,
+        fontWeight:'500',
+        padding:8,
+        borderBottomColor:'#7B8FCE',
+        borderBottomWidth:1,
+    }
+})
+
+export default Styles
