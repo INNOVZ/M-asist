@@ -19,7 +19,7 @@ const Styles = StyleSheet.create({
         backgroundColor:'#fff',
         borderRadius:15,
         alignItems:'center',
-        justifyContent:'space-between',
+        justifyContent:'center',
         flexDirection:'row',
         paddingLeft:20,
         paddingRight:20,
@@ -29,9 +29,11 @@ const Styles = StyleSheet.create({
         shadowRadius: 5,
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity:0.2,
+        flex:1
     },
     map:{
         color:'#7B8FCE',
+        flex:1,
     },
     icon:{
         marginTop:15,

@@ -7,7 +7,7 @@ const Styles = StyleSheet.create({
         marginLeft:'2.5%',
         padding:20,
         backgroundColor:'#fff',
-        borderRadius:15,
+        borderRadius:7,
     },
     labName:{
         fontSize:16,

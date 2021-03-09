@@ -5,7 +5,7 @@ import Styles from './styles'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import TestsButton from "../../Components/TestsButton";
-import GoogleMap from '../../Components/googleMap'
+import GoogleMap from '../../Components/GoogleMap'
  
 const LabPage = () => {
     return (
@@ -32,8 +32,8 @@ const LabPage = () => {
                         </View>
                     </View>
                     <View style={Styles.map}>
-                    <GoogleMap/>
-                </View>
+                        <GoogleMap/>
+                    </View>
                 </View>
                
             </ScrollView>

@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, FlatList, Pressable } from 'react-native'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import Styles from './styles'
+import GoogleAutoComplete from '../GoogleAutoComplete'
 
 const PlaceList = ({item}) => {
     return (

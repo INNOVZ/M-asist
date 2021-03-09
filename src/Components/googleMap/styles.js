@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const Styles = StyleSheet.create({
     mapContainer:{
         width:'100%',
-        height:250,
+        height:'100%',
     },
     labMarker:{
         backgroundColor:'#676767',

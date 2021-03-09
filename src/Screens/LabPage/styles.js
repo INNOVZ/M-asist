@@ -18,7 +18,7 @@ const Styles = StyleSheet.create({
         marginTop:15,
         backgroundColor:'rgba(255, 255, 255, 1)',
         // height:275,
-        borderRadius:15,
+        borderRadius:7,
         padding:20,
         shadowColor:'#676767',
         shadowRadius:2,
@@ -57,6 +57,7 @@ const Styles = StyleSheet.create({
     map:{
         marginLeft:-15,
         width:'110%',
+        height:250,
         marginTop:15,
         backgroundColor:'#fff',
     }
