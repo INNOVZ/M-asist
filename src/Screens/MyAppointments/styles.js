@@ -7,7 +7,8 @@ const Styles = StyleSheet.create({
         justifyContent:'center',
     },
     scrollArea:{
-        backgroundColor:'#E6E8F0',
+        backgroundColor:'#D6DEF6',
+        minHeight:800,
     }
 })
 export default Styles

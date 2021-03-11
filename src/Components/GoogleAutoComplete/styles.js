@@ -27,6 +27,9 @@ const Styles = StyleSheet.create({
         shadowRadius: 5,
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity:0.2,
-    }
+    },
+    row: {
+        height: "100%",
+       },
 })
 export default Styles

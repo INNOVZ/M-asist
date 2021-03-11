@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import Styles from './styles'
 
-const TestsButton = ({testName}) => {  
+const TestsSearch = ({testName}) => {  
     const navigation = useNavigation();
 
     return (
@@ -17,4 +17,4 @@ const TestsButton = ({testName}) => {
     )
 }
 
-export default TestsButton
+export default TestsSearch

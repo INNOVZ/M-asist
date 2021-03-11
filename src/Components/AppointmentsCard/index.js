@@ -3,8 +3,10 @@ import { View, Text, Image,Pressable } from 'react-native'
 import Styles from './styles'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import Fontisto from 'react-native-vector-icons/Fontisto'
+import moduleName from '../TestSelect'
+import TestSelect from '../TestSelect'
 
-const BookingsCard = () => {
+const AppointmentsCard = () => {
     return (
         <View style={Styles.container}>
              <View style={Styles.topArea}>
@@ -18,11 +20,11 @@ const BookingsCard = () => {
                 </View>
                 <View style={Styles.testDetails}>
                     <Text style={Styles.test}>Essame : </Text>
-                    <Text style={Styles.testName}>Ecografia</Text>
+                    <TestSelect  testName= "Torace"/>
                 </View>
                 <View style={Styles.labTiming}>
                     <Text style={Styles.test}>Data : </Text>
-                    <Text style={Styles.labOpening}>1 Marzo 2021 alle 03:00 PM</Text>
+                    <Text style={Styles.testTime}>1 Marzo 2021 alle 03:00 PM</Text>
                 </View>
             </View>
             <View style={{ borderBottomColor: '#7B8FCE',borderBottomWidth: 1, marginTop:15, marginBottom:15,}} />
@@ -43,4 +45,4 @@ const BookingsCard = () => {
     )
 }
 
-export default BookingsCard
+export default AppointmentsCard

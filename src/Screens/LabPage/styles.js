@@ -43,7 +43,7 @@ const Styles = StyleSheet.create({
         marginTop:30,
     },
     availableTests:{
-        fontSize:15,
+        fontSize:12,
         fontWeight:'700',
         color:'#676767'
     },
@@ -53,6 +53,33 @@ const Styles = StyleSheet.create({
         flexDirection:'row',
         alignItems: 'stretch',
         flexWrap: 'wrap',
+    },
+    pickerBox:{
+        marginTop:15,
+        backgroundColor:'rgba(255, 255, 255, 1)',
+        // height:275,
+        borderRadius:7,
+        // flexDirection:'row',
+        padding:20,
+        shadowColor:'#676767',
+        shadowRadius:2,
+        shadowRadius: 5,
+        shadowOffset: { width: 1, height: 0.1 },
+        shadowOpacity:0.1,
+    },
+    pickDateTime:{
+        flexDirection:'row',
+        alignItems:'center',
+        padding:10,
+    },
+    dateTitle:{
+        flex:1,
+        fontSize:12,
+        fontWeight:'700',
+        color:'#676767'
+    },
+    testColor:{
+        color:'#fff'
     },
     map:{
         marginLeft:-15,

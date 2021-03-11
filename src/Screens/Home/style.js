@@ -15,10 +15,10 @@ const Styles = StyleSheet.create({
         paddingBottom:15
     },
     headerArea:{
-        height:275,
+        height:350,
         borderBottomEndRadius:50,
         borderBottomLeftRadius:15,
-        justifyContent:'space-around',
+        // justifyContent:'space-around',
         // alignItems:'center',
         padding:'5%'
     },
@@ -34,6 +34,34 @@ const Styles = StyleSheet.create({
         marginTop:15,
         color:'#fff',
     },  
+    service:{
+        alignItems:'center',
+        marginHorizontal:10
+    },
+    selectionArea:{
+        marginVertical:25,
+        flexDirection:'row',
+        justifyContent:'center'
+    },
+    selectService:{
+        backgroundColor:'#fff',
+        width:65,
+        height:65,
+        borderRadius:15,
+        alignItems:'center',
+        justifyContent:'center',
+        shadowColor:'#676767',
+        shadowRadius:5,
+        shadowRadius: 5,
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity:0.2,
+    },
+    serviceTitle:{
+        marginTop:10,
+        color:'#fff',
+        fontSize:12,
+        fontWeight:'500'
+    },
     searchBox:{
         width:'100%',
         height:50,
@@ -51,21 +79,7 @@ const Styles = StyleSheet.create({
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity:0.2,
     },
-    scrollArea:{
-        marginTop:-15,
-        padding:'2.5%',
-        borderTopStartRadius:15,
-        borderTopRightRadius:15,
-        backgroundColor:'#E6E8F0',
-        
-    },
-    searchHeader:{
-        color:'#7B8FCE',
-        fontSize:22,
-        fontWeight:'600',
-        marginTop:50,
-        fontFamily:'Poppins'
-    },
+    
     // testButtons:{
     //     backgroundColor:'#718BDB',
     //     paddingVertical:6,

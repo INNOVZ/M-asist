@@ -5,7 +5,7 @@ const Styles = StyleSheet.create({
         marginTop:15,
         width:'95%',
         backgroundColor:'rgba(255, 255, 255, 1)',
-        height:275,
+        height:300,
         marginLeft:'2.5%',
         borderRadius:7,
         padding:20,
@@ -41,25 +41,27 @@ const Styles = StyleSheet.create({
         fontWeight:'600',
     },
     labTiming:{
-        borderColor:'#7B8FCE',
-        borderWidth:1,
+        // borderColor:'#7B8FCE',
+        // borderWidth:1,
         padding:7,
         borderRadius:5,
-        marginTop:15,
+        // marginTop:15,
         flexDirection:'row',
         alignItems:'center',
     },
-    labOpening:{
+    testTime:{
+        marginTop:15,
         color:'#555',
         fontSize:12,
         fontWeight:'600',
+        flex:0.9,
     },
     icon:{
         marginRight:15,
     },
     testDetails:{
-        borderColor:'#7B8FCE',
-        borderWidth:1,
+        // borderColor:'#7B8FCE',
+        // borderWidth:1,
         padding:7,
         borderRadius:5,
         marginTop:15,
@@ -70,7 +72,7 @@ const Styles = StyleSheet.create({
         fontSize:13,
         fontWeight:'500',
         color:'#333',
-        marginLeft:15
+        marginLeft:15,
     },
     bottomArea:{
         flexDirection:'row',
@@ -82,6 +84,8 @@ const Styles = StyleSheet.create({
         color:'#7B8FCE',
         fontWeight:'700',
         fontSize:12,
+        marginTop:15,
+        flex:0.5,
     },
     testName:{
         borderColor:'#7B8FCE',

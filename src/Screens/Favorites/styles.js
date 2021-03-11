@@ -8,6 +8,7 @@ const Styles = StyleSheet.create({
     },
     scrollArea:{
         backgroundColor:'#D6DEF6',
+        minHeight:550,
     },
     
 })

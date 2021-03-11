@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, ScrollView, SafeAreaView } from 'react-native'
 import Styles from './styles'
-import BookingsCard from '../../Components/BookingsCard'
+import AppointmentsCard from '../../Components/AppointmentsCard'
 import TopBar from '../../Navs/TopBar'
 
 const MyAppointments = () => {
@@ -9,7 +9,7 @@ const MyAppointments = () => {
         <SafeAreaView >
             <TopBar/>
             <ScrollView style={Styles.scrollArea}>
-                <BookingsCard/>
+                <AppointmentsCard />
             </ScrollView>
         </SafeAreaView>
     )

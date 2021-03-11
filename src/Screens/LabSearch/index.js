@@ -5,12 +5,12 @@ import Fontisto from 'react-native-vector-icons/Fontisto'
 import Styles from './styles'
 import SearchHeader from '../../Components/SearchHeader';
 import SearchResultTabNav from "../../Navs/SearchResultTabNav";
+import LabsList from '../../Components/LabsList'
 
 const LabSearch = () => {
     return (
         <SafeAreaView style={Styles.container}>
             <SearchHeader/>
-            <SearchResultTabNav />
         </SafeAreaView>
     )
 }

@@ -2,26 +2,25 @@ import {StyleSheet} from 'react-native'
 
 const Styles = StyleSheet.create({
     container:{
-        
         // backgroundColor:'#7B8FCE',
         width:'95%',
         marginLeft:'2%',
-        marginTop:10,
+        // marginTop:15,
         height:60,
         flexDirection:'row',
         padding:0,
         alignItems:'center',
         justifyContent:'space-between',
     },
-    addressBox:{
+    box:{
         height:60,
         flexDirection:'row',
         justifyContent:'flex-start',
         alignItems:'center',
-        borderRadius:10,
+        borderRadius:12,
     },
     icon:{
-        marginRight:10,
+        marginRight:15,
     },
     address:{
         justifyContent:'center',

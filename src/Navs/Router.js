@@ -8,10 +8,12 @@ import Profile from '../Screens/Profile'
 import HomeTabNavigator from './HomeTabNavigator'
 import PlaceSearch from "../Screens/PlaceSearch";
 import LabSearch from '../Screens/LabSearch'
-import TestSearch from "../Screens/TestSearch";
+import TestSearch from "../Screens/TestsSearch";
 import LabList from '../Components/LabsList'
 import SearchScreen from "../Screens/PlaceSearch";
 import LabPage from "../Screens/LabPage";
+import SearchResult from '../Navs/SearchResultTabNav'
+import GoogleMap from '../Components/GoogleMap'
 const Stack = createStackNavigator();
 
 const Router = () => {
@@ -29,6 +31,7 @@ const Router = () => {
                 <Stack.Screen name="LabList" component={LabList} options={{headerShown:false}}/>
                 <Stack.Screen name="SearchScreen" component={SearchScreen} options={{headerShown:false}}/>
                 <Stack.Screen name="LabPage" component={LabPage} options={{headerShown:false}}/>
+                <Stack.Screen name="GoogleMap" component={GoogleMap} options={{headerShown:false}}/>
             </Stack.Navigator>
            
         </NavigationContainer>
