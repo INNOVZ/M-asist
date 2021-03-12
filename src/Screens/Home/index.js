@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, Text,ImageBackground, Pressable, TouchableHighlight } from 'react-native'
+import React, {useState} from 'react'
+import { View, Text,ImageBackground, Pressable, TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight } from 'react-native'
 import HomeSearch from '../../Components/HomeSearch'
 import Styles from './style'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
@@ -8,7 +8,21 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import {useNavigation} from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient';
 
+
 const Home = () => {
+
+    const [lab, setLab] = useState(true)
+    // const [click, setSlick] = useState(1)
+
+    const SelectLabs = ()=>{
+        setLab(true)
+        // setClick(1)
+    }
+    const SelectHospital = ()=>{
+        setLab(false)
+        // setClick(0.7)
+    }
+
     const navigation = useNavigation();
     return (
         <View style={Styles.container}>
@@ -18,13 +32,18 @@ const Home = () => {
                     <Text style={Styles.welcomeMessage}>Voui Prenotare un Appuntamento?</Text>
                 
                     <View style={Styles.service}>
-                        <Pressable style={Styles.selectButtons} onPress={()=> navigation.navigate('TestSearch')}>
-                            <FontAwesome style={Styles.icon} name="heartbeat" size={18} color={'#7B8FCE'}/>
-                            <Text style={Styles.testName}>Laboratorio</Text>
-                        </Pressable>
-                        <Pressable style={Styles.selectButtons} onPress={()=> navigation.navigate('TestSearch')}>
-                            <MaterialIcons style={Styles.icon} name="local-hospital" size={18} color={'#7B8FCE'}/>
-                            <Text style={Styles.testName}>Ospedale</Text>
+                        
+                        <TouchableHighlight>
+                            <Pressable style={Styles.selectButtons} onPress={SelectLabs}>
+                                <FontAwesome style={Styles.icon} name="heartbeat" size={18} color={'#7B8FCE'}/>
+                                <Text style={Styles.testName}>Laboratorio</Text>
+                            </Pressable>
+                        </TouchableHighlight>
+                        <Pressable >
+                            <Pressable style={Styles.selectButtons} onPress={SelectHospital}>
+                                <MaterialIcons style={Styles.icon} name="local-hospital" size={18} color={'#7B8FCE'}/>
+                                <Text style={Styles.testName}>Ospedale</Text>
+                            </Pressable>
                         </Pressable>
                     </View>
                 </View>
@@ -36,9 +55,10 @@ const Home = () => {
                     <Fontisto name="map-marker-alt" size={17} color={'#7B8FCE'}/>
                 </Pressable>
             </LinearGradient>
-
-            <HomeSearch/>
-
+            {lab? 
+                <HomeSearch searchTitle="Cerca Laboratorio"/>
+                :<HomeSearch searchTitle="Cerca Ospedale"/>
+            }
         </View>
     )
 }

@@ -10,7 +10,12 @@ const Styles = StyleSheet.create({
         marginRight:15,
         flexDirection:'row',
         alignItems:'center',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        shadowColor:'#676767',
+        shadowRadius:5,
+        shadowRadius: 5,
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity:0.2,
     },
     testName:{
         color:'#fff'
