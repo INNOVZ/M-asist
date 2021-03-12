@@ -11,7 +11,7 @@ const TestSelect = ({testName}) => {
         <View>
             <Pressable style={Styles.testButtons} onPress={()=> navigation.navigate('TestSearch')}>
                     <Text style={Styles.testName}>{testName}</Text>
-                </Pressable>
+            </Pressable>
         </View>
     )
 }

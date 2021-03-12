@@ -87,6 +87,21 @@ const Styles = StyleSheet.create({
         height:250,
         marginTop:15,
         backgroundColor:'#fff',
+    },
+    bookTest: {
+        height:60,
+        backgroundColor:'#7B8FCE',
+        width:'100%',
+        position:'absolute',
+        right: 0,
+        bottom:70,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    book:{
+        color:'#fff',
+        fontSize:18,
+        fontWeight:'700',
     }
 })
 

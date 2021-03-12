@@ -18,7 +18,7 @@ const Styles = StyleSheet.create({
         height:350,
         borderBottomEndRadius:50,
         borderBottomLeftRadius:15,
-        // justifyContent:'space-around',
+        justifyContent:'space-around',
         // alignItems:'center',
         padding:'5%'
     },
@@ -36,31 +36,24 @@ const Styles = StyleSheet.create({
     },  
     service:{
         alignItems:'center',
-        marginHorizontal:10
+        flexDirection:'row'
     },
-    selectionArea:{
-        marginVertical:25,
-        flexDirection:'row',
-        justifyContent:'center'
-    },
-    selectService:{
+    selectButtons:{
         backgroundColor:'#fff',
-        width:65,
-        height:65,
-        borderRadius:15,
+        paddingVertical:8,
+        paddingHorizontal:15,
+        borderRadius:12,
+        marginTop:15,
+        marginRight:15,
+        flexDirection:'row',
         alignItems:'center',
-        justifyContent:'center',
-        shadowColor:'#676767',
-        shadowRadius:5,
-        shadowRadius: 5,
-        shadowOffset: { width: 2, height: 2 },
-        shadowOpacity:0.2,
+        justifyContent:'space-between'
     },
-    serviceTitle:{
-        marginTop:10,
-        color:'#fff',
-        fontSize:12,
-        fontWeight:'500'
+    testName:{
+        color:'#7B8FCE'
+    },
+    icon:{
+        marginRight:10,
     },
     searchBox:{
         width:'100%',

@@ -81,9 +81,14 @@ const LabPage = () => {
                     <View style={Styles.map}>
                         <GoogleMap/>
                     </View>
+                    
+                    
                 </View>
                
             </ScrollView>
+            <Pressable style={Styles.bookTest}>
+                <Text style={Styles.book}>Prenota</Text>
+            </Pressable>
         </SafeAreaView>
     )
 }

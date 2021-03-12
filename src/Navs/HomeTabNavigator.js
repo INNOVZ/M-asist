@@ -4,31 +4,73 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Home from '../Screens/Home'
 import MyAppointments from '../Screens/MyAppointments'
 import Favorites from '../Screens/Favorites'
+import LabPage from '../Screens/LabPage'
 import Profile from '../Screens/Profile'
+import NilAppointment from '../Screens/NilAppointment'
+import NilFavorites from '../Screens/NilFavorites'
+import NilFolder from '../Screens/NilFolder'
 import Fontisto from 'react-native-vector-icons/Fontisto'
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import AntDesign from 'react-native-vector-icons/AntDesign'
+import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 
-const Tab = createBottomTabNavigator();
+const Tab = AnimatedTabBarNavigator();
 
 const HomeTabNavigator = () => {
     return (
-        <Tab.Navigator>
+        <Tab.Navigator 
+            tabBarOptions={{
+            activeTintColor: "#fff",
+            inactiveTintColor: "#7B8FCE",
+            activeBackgroundColor:'#7B8FCE'
+          }}>
             <Tab.Screen 
             name="Home" 
             component={Home} 
-            options={{tabBarIcon:({color:string})=>(<Fontisto name="home" size={17} color={'#7B8FCE'}/>)}} />
+            options={{
+                tabBarIcon: ({ focused, color, size }) => (
+                    <AntDesign name="home"
+                        size={size ? size : 24}
+                        color={focused ? color : "#222222"}
+                        focused={focused}
+                        color={color}
+                    />
+                )
+              }} />
             <Tab.Screen 
             name="Agenda" 
-            component={MyAppointments} 
-            options={{tabBarIcon:({color:string})=>(<Fontisto name="date" size={17} color={'#7B8FCE'}/>)}} />
+            component={NilAppointment} 
+            options={{
+                tabBarIcon: ({ focused, color, size }) => (
+                <Fontisto name="date" 
+                size={size ? size : 18}
+                color={focused ? color : "#222222"}
+                focused={focused}
+                color={color}/>)}} />
             <Tab.Screen 
-            name="Favorites" 
-            component={Favorites} 
-            options={{tabBarIcon:({color:string})=>(<Fontisto name="heart-alt" size={17} color={'#7B8FCE'}/>)}} />
+            name="Preferiti" 
+            component={NilFavorites} 
+            options={{tabBarIcon: ({ focused, color, size }) =>(<Fontisto name="heart-alt" 
+                size={size ? size : 18}
+                color={focused ? color : "#222222"}
+                focused={focused}
+                color={color}/>)}} />
             <Tab.Screen 
-            name="Profile" 
+            name="Cartella" 
+            component={NilFolder} 
+            options={{tabBarIcon: ({ focused, color, size }) =>(<Fontisto name="folder" 
+            size={size ? size : 18}
+            color={focused ? color : "#222222"}
+            focused={focused}
+            color={color}/>)}} />
+            <Tab.Screen 
+            name="Profilo" 
             component={Profile} 
-            options={{tabBarIcon:({color:string})=>(<MaterialIcons name="person-outline" size={17} color={'#7B8FCE'}/>)}} />
+            options={{tabBarIcon: ({ focused, color, size })=>(<Ionicons name="person-outline" 
+            size={size ? size : 18}
+            color={focused ? color : "#222222"}
+            focused={focused}
+            color={color}/>)}} />
         </Tab.Navigator>
     )
 }
