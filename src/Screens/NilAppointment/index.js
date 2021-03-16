@@ -1,13 +1,15 @@
 import React from 'react'
 import { View, Text, Dimensions, SafeAreaView } from 'react-native'
 import Styles from './styles'
+import MainscreenNav from '../../Navs/MainScreenNav'
 import NilCard from '../../Components/NilCard'
 
-const NilAppointment = () => {
+const NilAppointment = ({}) => {
     return (
-        <SafeAreaView style={Styles.container}>
+        <View style={Styles.container}>
+            <MainscreenNav pageTitle="Apunatamenti"/>
             <NilCard heading="No Appointments" icon="md-book-outline"/>
-        </SafeAreaView>
+        </View>
     )
 }
 

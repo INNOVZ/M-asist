@@ -7,7 +7,7 @@ import {useNavigation} from '@react-navigation/native'
 import LabPage from '../../Screens/LabPage'
 
 
-const SearchCard = (props) => {
+const MapList = (props) => {
 
     const lab=props.lab
 
@@ -43,4 +43,4 @@ const SearchCard = (props) => {
     )
 }
 
-export default SearchCard
+export default MapList

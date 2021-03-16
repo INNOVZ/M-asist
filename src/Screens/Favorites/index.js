@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import { View, Text,ScrollView, FlatList, SafeAreaView } from 'react-native'
 import TopNav from '../../Navs/TopNav'
 import FavoritesCard from "../../Components/FavoritesCard";

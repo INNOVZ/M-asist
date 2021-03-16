@@ -9,7 +9,7 @@ const TestsSearch = ({testName}) => {
 
     return (
         <View>
-            <Pressable style={Styles.testButtons} onPress={()=> navigation.navigate('TestSearch')}>
+            <Pressable style={Styles.testButtons} onPress={()=> navigation.navigate('SearchResult')}>
                     <Text style={Styles.testName}>{testName}</Text>
                     <MaterialIcons name="keyboard-arrow-right" size={24} color={'#fff'}/>
             </Pressable>

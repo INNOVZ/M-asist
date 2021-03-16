@@ -32,7 +32,7 @@ const LabPage = () => {
     return (
         <SafeAreaView>
             <TopMenu/>
-            <ScrollView style={Styles.scrollArea}>
+            <ScrollView showsVerticalScrollIndicator={false} style={Styles.scrollArea}>
                 <Image source={require('../../../assets/images/synlabim.png')}></Image>
                 <View style={Styles.container}>
                     <View style={Styles.addressBox}>

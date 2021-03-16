@@ -58,7 +58,7 @@ const HomeTabNavigator = () => {
             <Tab.Screen 
             name="Cartella" 
             component={NilFolder} 
-            options={{tabBarIcon: ({ focused, color, size }) =>(<Fontisto name="folder" 
+            options={{tabBarIcon: ({ focused, color, size }) =>(<Ionicons name="folder-outline" 
             size={size ? size : 18}
             color={focused ? color : "#222222"}
             focused={focused}
