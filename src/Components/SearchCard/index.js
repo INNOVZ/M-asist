@@ -17,7 +17,7 @@ const SearchCard = (props) => {
             <View style={Styles.topArea}>
                 <View style={Styles.labDetails}>
                     <Text style={Styles.labName}>{lab.name}</Text>
-                    {/* <Image source={{logo}} style={Styles.image}/> */}
+                    <Image source={lab.logo} style={Styles.image}/>
                 </View>
                 <View style={Styles.labAddress}>
                     <Fontisto style={Styles.icon} name="map-marker-alt"  size={18} color={'#7B8FCE'}/>

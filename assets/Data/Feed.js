@@ -1,7 +1,7 @@
 export default [
     {
       id: '0',
-      logo: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+      logo:require('../images/synlab.png'),
       type: 'Private Room',
       name: 'Synlab',
       address: 'Via Giacomo Quarenghi, 40, 20151 Milano MI',
@@ -16,7 +16,7 @@ export default [
     },
     {
       id: '1',
-      image: '../../../assets/images/bianalisi.png',
+      logo: require('../images/bianalisi.png'),
       type: 'Laboratory',
       name: 'Laboratorio Analisi Mediche Sa',
       address: 'Piazzale Francesco Accursio, 4, 20155 Milano MI',
@@ -32,7 +32,7 @@ export default [
     },
     {
       id: '2',
-      image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+      logo: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
       type: 'Private Room',
       name: 'Laboratorio Analisi Mediche',
       address: 'Via Marmolada, 7, 20162 Milano MI',
@@ -48,7 +48,7 @@ export default [
     },
     {
       id: '3',
-      image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+      image: require('../images/synlab.png'),
       type: 'Private Room',
       name: 'Laboratorio Analisi Mediche San Giorgio',
       address: 'Piazzale Francesco Accursio, 4, 20155 Milano MI',
