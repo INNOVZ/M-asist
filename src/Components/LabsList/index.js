@@ -10,9 +10,9 @@ import SearchResult from '../SearchResult'
 const LabsList = () => {
     return (
         <SafeAreaView style={Styles.container}>
-            <ScrollView showsVerticalScrollIndicator={false} style={Styles.scrollArea}>
-                <SearchResult/>
-            </ScrollView>
+            <View showsVerticalScrollIndicator={false} style={Styles.scrollArea}>
+                <SearchResult/> 
+            </View>
         </SafeAreaView>
     )
 }

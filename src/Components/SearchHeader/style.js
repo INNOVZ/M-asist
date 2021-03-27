@@ -1,47 +1,33 @@
 import {StyleSheet} from 'react-native'
 
 const Styles = StyleSheet.create({
-    container:{
-        width:'95%',
-        marginLeft:'2.5%',
-    },
     headerContainer:{
-        flexDirection:'column',
-        height:65,
-    },
-    header:{
-        flexDirection:'row',
-        alignItems:'center',
+        width:'95%',
+        marginHorizontal:'2.5%',
+        marginVertical:15,
     },
     searchBox:{
-        flex:0.9,
-        height:50,
-        backgroundColor:'#fff',
-        borderRadius:15,
-        alignItems:'center',
-        justifyContent:'center',
-        flexDirection:'row',
-        paddingLeft:20,
-        paddingRight:20,
-        marginTop:15,
-        shadowColor:'#676767',
-        shadowRadius:5,
-        shadowRadius: 5,
-        shadowOffset: { width: 2, height: 2 },
-        shadowOpacity:0.2,
-        flex:1
-    },
-    map:{
+        padding:12,
+        width:'100%',
         color:'#7B8FCE',
-        flex:1,
+        flexDirection:'row',
+        justifyContent:'space-between',
+        backgroundColor:'#fff',
+        borderRadius:12,
+        borderColor:'#7B8FCE',
+        // borderWidth:0.25,
+        shadowColor:'#676767',
+        shadowRadius: 3,
+        shadowOffset: { width: 1, height: 1 },
+        shadowOpacity:0.2,
     },
-    icon:{
-        marginTop:15,
-        marginRight:15,
-        // height:50,
-        // alignItems:'center',
-        // justifyContent:'center',
-        // backgroundColor:'#fff'
+    input:{
+        color:'#7B8FCE',
     },
+    clear:{
+        width:20,
+        height:20,
+    }
+    
 })
 export default Styles

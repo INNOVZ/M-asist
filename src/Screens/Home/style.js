@@ -3,19 +3,11 @@ import {StyleSheet} from 'react-native'
 const Styles = StyleSheet.create({
     container:{
         width:'100%',
+        flex:1,
         backgroundColor:'#E6E8F0',
-        height:900
-        // backgroundColor:'#E6E8F0',
-    },
-    image:{
-        width:'100%',
-        height:350,
-        justifyContent:'flex-end',
-        alignItems:'center',
-        paddingBottom:15
     },
     headerArea:{
-        height:350,
+        flex:1,
         borderBottomEndRadius:50,
         borderBottomLeftRadius:15,
         justifyContent:'space-around',
@@ -62,7 +54,7 @@ const Styles = StyleSheet.create({
     },
 
     testName:{
-        color:'#7B8FCE'
+        color:'#6f8add'
     },
     icon:{
         marginRight:10,
@@ -99,11 +91,8 @@ const Styles = StyleSheet.create({
     // testName:{
     //     color:'#fff'
     // },
-    map:{
-        color:'#7B8FCE',
-    },
-    lab:{
-        color:'#7B8FCE',
+    mapInput:{
+        color:'#6f8add',
     },
     row:{
         marginTop:15,
@@ -111,7 +100,15 @@ const Styles = StyleSheet.create({
         flexDirection:'row',
         alignItems: 'stretch',
         flexWrap: 'wrap',
-    }
+    },
+    scrollArea:{
+        flex:1,
+        marginTop:-15,
+        padding:'2.5%',
+        borderTopStartRadius:15,
+        borderTopRightRadius:15,
+        backgroundColor:'#dae1ea',
+    },
 })
 
 export default Styles

@@ -4,7 +4,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Home from '../Screens/Home'
 import MyAppointments from '../Screens/MyAppointments'
 import Favorites from '../Screens/Favorites'
-import LabPage from '../Screens/LabPage'
 import Profile from '../Screens/Profile'
 import NilAppointment from '../Screens/NilAppointment'
 import NilFavorites from '../Screens/NilFavorites'
@@ -16,13 +15,13 @@ import { AnimatedTabBarNavigator } from "react-native-animated-nav-tab-bar";
 
 const Tab = AnimatedTabBarNavigator();
 
-const HomeTabNavigator = () => {
+const HomeTabNavigator  = () => {
     return (
         <Tab.Navigator 
             tabBarOptions={{
             activeTintColor: "#fff",
-            inactiveTintColor: "#7B8FCE",
-            activeBackgroundColor:'#7B8FCE'
+            inactiveTintColor: "#6f8add",
+            activeBackgroundColor:'#6f8add'
           }}>
             <Tab.Screen 
             name="Home" 

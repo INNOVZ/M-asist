@@ -8,6 +8,7 @@ const Styles = StyleSheet.create({
     },
     header:{
         height:370,
+        width:500,
         flexDirection:'row',
         paddingTop:15,
     },

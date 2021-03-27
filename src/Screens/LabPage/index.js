@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { View, Text, ScrollView,SafeAreaView, Image, Button,Pressable } from 'react-native'
+import { View, Text, ScrollView,SafeAreaView, Image,Dimensions, Button,Pressable } from 'react-native'
 import TopMenu from '../../Navs/TopMenu'
 import Styles from './styles'
 import Fontisto from 'react-native-vector-icons/Fontisto'
@@ -8,6 +8,7 @@ import TestSelect from "../../Components/TestSelect";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import GoogleMap from '../../Components/GoogleMap'
  
+const {height, width} = Dimensions.get('window');
 const LabPage = () => {
 
     const [pickerMode, setPickerMode] = useState(null);

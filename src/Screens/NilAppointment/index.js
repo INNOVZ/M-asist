@@ -7,7 +7,7 @@ import NilCard from '../../Components/NilCard'
 const NilAppointment = ({}) => {
     return (
         <View style={Styles.container}>
-            <MainscreenNav pageTitle="Apunatamenti"/>
+            <MainscreenNav pageTitle="Appuntamenti"/>
             <NilCard heading="No Appointments" icon="md-book-outline"/>
         </View>
     )

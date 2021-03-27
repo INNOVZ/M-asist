@@ -13,7 +13,7 @@ const GooglePlacesInput = () => {
     <GooglePlacesAutocomplete
       placeholder='Dove?'
       onPress={(data , details = null) => {
-        // setInputPlace(value: {data, details});
+        // se
       }}
       styles={{
         textInput: Styles.testInput,
@@ -22,7 +22,7 @@ const GooglePlacesInput = () => {
         poweredContainer: {
           justifyContent: 'flex-end',
           alignItems: 'center',
-          borderBottomRightRadius: 5,
+          borderBottomRightRadius: 5, 
           borderBottomLeftRadius: 5,
           borderColor: '#c8c7cc',
           borderTopWidth: 0.5,

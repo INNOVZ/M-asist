@@ -5,7 +5,7 @@ import Fontisto from 'react-native-vector-icons/Fontisto'
 import Styles from './styles'
 import PlaceList from '../../Components/PlaceList'
 import GooglePlacesInput from '../../Components/GoogleAutoComplete'
-
+import LabsList from '../../Components/LabsList'
 const PlaceSearch = () => {
 
     const [place, setPlace] = useState('')
@@ -14,9 +14,9 @@ const PlaceSearch = () => {
         
         <SafeAreaView style={Styles.container}>
             <View style={Styles.header}>
-                <MaterialIcons style={Styles.icon} name="chevron-left" size={38} color={'#7B8FCE'}/>
                 <GooglePlacesInput/>
             </View>
+            <PlaceList/>
         </SafeAreaView>
     )
 }

@@ -18,14 +18,6 @@ const Styles = StyleSheet.create({
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity:0.2,
     },
-    scrollArea:{
-        marginTop:-15,
-        padding:'2.5%',
-        borderTopStartRadius:15,
-        borderTopRightRadius:15,
-        backgroundColor:'#E6E8F0',
-        
-    },
     searchHeader:{
         color:'#7B8FCE',
         fontSize:22,
@@ -45,6 +37,21 @@ const Styles = StyleSheet.create({
         flexDirection:'row',
         alignItems: 'stretch',
         flexWrap: 'wrap',
+    },
+    searchButton:{
+        height:60,
+        backgroundColor:'#7B8FCE',
+        width:'100%',
+        position:'absolute',
+        right: 0,
+        bottom:0,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    searchText:{
+        fontSize:16,
+        fontWeight:'600',
+        color:'#fff',
     }
 })
 

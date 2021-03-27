@@ -5,12 +5,12 @@ const Styles = StyleSheet.create({
         // backgroundColor:'#7B8FCE',
         width:'100%',
         paddingTop:15,
-        height:80,
+        height:85,
         flexDirection:'row',
         padding:0,
         alignItems:'center',
         justifyContent:'flex-start',
-        backgroundColor:'#718BDB'
+        backgroundColor:'#6f8add'
     },
     box:{
         marginLeft:15,
@@ -41,7 +41,7 @@ const Styles = StyleSheet.create({
         borderRadius:10,
     },
     title:{
-        color:'#718BDB',
+        color:'#6f8add',
         fontSize:12,
         fontWeight:'600',
     }

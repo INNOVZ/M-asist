@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native'
 const Styles = StyleSheet.create({
     testButtons:{
         backgroundColor:'#718BDB',
-        paddingVertical:6,
+        paddingVertical:4,
         paddingHorizontal:12,
         borderRadius:15,
         marginTop:15,

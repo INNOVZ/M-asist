@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import Styles from './styles'
 
-const TestsSearch = ({testName}) => {  
+const TestsSearchButton = ({testName}) => {  
     const navigation = useNavigation();
 
     return (
@@ -14,7 +14,7 @@ const TestsSearch = ({testName}) => {
                     <MaterialIcons name="keyboard-arrow-right" size={24} color={'#fff'}/>
             </Pressable>
         </View>
-    )
+    ) 
 }
 
-export default TestsSearch
+export default TestsSearchButton
